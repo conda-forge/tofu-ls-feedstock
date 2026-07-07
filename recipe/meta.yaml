@@ -1,5 +1,5 @@
 {% set goname = "github.com/opentofu/tofu-ls" %}
-{% set version = "0.5.1" %}
+{% set version = "0.5.2" %}
 
 {% set name = goname.split('/')[-1] %}
 {% set pkg_src = ('src/'+goname).replace("/",os.sep) %}
@@ -11,7 +11,7 @@ package:
 source:
   - folder: {{ pkg_src }}
     url: https://{{ goname }}/archive/v{{ version }}.tar.gz
-    sha256: a25eacdf28dcb632b25592572303ecdb06c658d039af6d4a29df89025a657f90
+    sha256: 05f75c17c164c48c0b65a0d0f727dbd7cb921560c23a9bff3c4db4a2a847519c
 
 build:
   number: 0
